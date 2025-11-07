@@ -6,7 +6,7 @@
 #    By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 12:06:51 by sadaniel          #+#    #+#              #
-#    Updated: 2025/11/07 13:02:44 by sadaniel         ###   ########.fr        #
+#    Updated: 2025/11/07 13:10:50 by sadaniel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I.
 
-SRC_FILES = ft_*.c
+SRC_FILES = $(wildcard ft_*.c)
 OBJ_FILES = $(SRC_FILES:%.c=%.o)
 
 all: $(NAME)
