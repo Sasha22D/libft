@@ -6,10 +6,10 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:33:13 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 12:34:43 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:11:07 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isdigit(int	c)
 {

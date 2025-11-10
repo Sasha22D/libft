@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:46:55 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 16:25:12 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:14:51 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -22,5 +22,6 @@ int	ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif

@@ -6,10 +6,10 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:12:47 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 12:26:56 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:10:34 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isaplha(int c)
 {

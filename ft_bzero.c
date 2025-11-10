@@ -6,10 +6,10 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 16:04:50 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 16:24:43 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:10:08 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

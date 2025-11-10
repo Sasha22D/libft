@@ -6,10 +6,10 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:19:07 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 13:39:42 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:12:06 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

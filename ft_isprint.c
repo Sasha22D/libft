@@ -6,10 +6,10 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:17:42 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/07 13:51:21 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/10 11:11:20 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isprint(int	c)
 {
