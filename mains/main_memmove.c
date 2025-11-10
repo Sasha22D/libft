@@ -3,8 +3,8 @@
 #include <string.h>
 int     main()
 {
-        char src[] = "DANIEL PAUL";
+        char src[] = "ABCDE";
 
-        ft_memmove(src + 2, src, 5);
+        ft_memmove(src + 1, src, 5);
         printf("%s\n", src);
 }
