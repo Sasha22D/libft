@@ -1,28 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/07 12:46:55 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/10 12:24:54 by sadaniel         ###   ########.fr       */
+/*   Created: 2025/11/10 11:17:34 by sadaniel          #+#    #+#             */
+/*   Updated: 2025/11/10 13:41:57 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-#include <stddef.h>
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	unsigned char *p;
+	unsigned char *o;
+	size_t	i;
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *s, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
+	i = 0;
+	o = (unsigned char *)dest;
+	p = (unsigned char *)src;
+	
+	if (o == p || n == 0)
+		return (dest);
 
-#endif
+	if (o < p)
+	{
+		while (i < n)
+		{
+			*o = *p;
+			o++;
+			p++;
+			i++;;
+		}
+	}
+	else
+	{
+		while (n-- > 0)
+		{
+			o[n] = p[n];
+		}
+	}
+	return (dest);
+}
