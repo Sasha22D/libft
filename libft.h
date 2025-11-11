@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:46:55 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/11 14:49:28 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:44:10 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -29,5 +29,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t siz);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 
 #endif
