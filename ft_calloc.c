@@ -6,14 +6,14 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 15:21:16 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/12 16:35:03 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/14 11:57:25 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	total_size;
+	size_t			total_size;
 	unsigned char	*ptr;
 
 	if (nmemb == 0 || size == 0)
