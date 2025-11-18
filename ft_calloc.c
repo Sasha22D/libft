@@ -6,19 +6,17 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 15:21:16 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/14 11:57:25 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/18 17:00:49 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t			total_size;
-	unsigned char	*ptr;
+	size_t		total_size;
+	void		*ptr;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	if (nmemb > (size_t)-1 / size)
+	if (size != 0 && nmemb > (size_t)-1 / size)
 		return (NULL);
 	total_size = nmemb * size;
 	ptr = malloc(total_size);

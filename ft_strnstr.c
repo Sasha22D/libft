@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:39:22 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/12 12:25:04 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/18 14:43:25 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,9 +30,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			{
 				j++;
 				k++;
+				if (little[j] == '\0')
+					return ((char *)&big[i]);
 			}
-			if (little[j] == '\0')
-				return ((char *)&big[i]);
 		}
 		i++;
 	}

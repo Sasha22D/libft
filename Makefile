@@ -6,7 +6,7 @@
 #    By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 12:06:51 by sadaniel          #+#    #+#              #
-#    Updated: 2025/11/17 12:44:46 by sadaniel         ###   ########.fr        #
+#    Updated: 2025/11/18 12:07:11 by sadaniel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,14 +50,14 @@ SRC_FILES = ft_isalpha.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c
 
-SRC_BONUS = ft_lstnew.c \
-	ft_lstadd_front.c \
-	ft_lstsize.c \
-	ft_lstadd_back.c \
-	ft_lstdelone.c \
-	ft_lstclear.c \
-	ft_lstiter.c \
-	ft_lstmap.c
+SRC_BONUS = ft_lstnew_bonus.c \
+	ft_lstadd_front_bonus.c \
+	ft_lstsize_bonus.c \
+	ft_lstadd_back_bonus.c \
+	ft_lstdelone_bonus.c \
+	ft_lstclear_bonus.c \
+	ft_lstiter_bonus.c \
+	ft_lstmap_bonus.c
 
 OBJ_DEFAULT = $(SRC_FILES:%.c=%.o)
 OBJ_BONUS = $(SRC_BONUS:%.c=%.o)
@@ -77,3 +77,8 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: $(NAME) $(OBJ_BONUS)
+	ar r $(NAME) $(OBJ_BONUS)
+
+.PHONY: all clean fclean re bonus

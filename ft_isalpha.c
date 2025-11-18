@@ -6,12 +6,12 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:12:47 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/10 11:10:34 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/18 12:48:30 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isaplha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
