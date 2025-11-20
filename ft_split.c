@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 16:44:43 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/17 10:04:55 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/19 12:39:59 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -101,3 +101,25 @@ char	**ft_split(char const *s, char c)
 	tab[index] = NULL;
 	return (tab);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    char **tab;
+    int i = 0;
+
+    tab = ft_split("sasha paul pierre michel daniel mousel", ' ');
+
+    while (tab[i])
+    {
+        printf("%s\n", tab[i]);
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
+
+    return 0;
+}
+*/

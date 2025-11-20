@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 12:27:58 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/18 16:33:28 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:18:52 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -34,3 +34,13 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * result);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	printf("%d\n", ft_atoi("113"));
+	printf("%d\n", ft_atoi("-113"));
+	printf("%d\n", ft_atoi("2147483647"));
+	printf("%d\n", ft_atoi("-2147483648"));
+}
+*/

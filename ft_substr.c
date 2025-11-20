@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:57:53 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/18 17:24:24 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/20 14:53:35 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,6 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= s_len)
 	{
 		str = malloc(1);
+		if (!str)
+			return (NULL);
 		str[0] = '\0';
 		return (str);
 	}
@@ -31,11 +33,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	p = str;
 	while (len--)
-	{
-		*p = s[start];
-		p++;
-		start++;
-	}
+		*p++ = s[start++];
 	*p = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	char	str[] = "sasha daniel";
+	char	*dup;
+
+	dup = ft_substr((char const *)str, 4, 12);
+
+	printf("%s\n", dup);
+
+}
+*/

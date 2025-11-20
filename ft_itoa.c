@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 16:59:17 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/17 10:41:54 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:52:21 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -61,3 +61,13 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	printf("%s\n", ft_itoa(113));
+	printf("%s\n", ft_itoa(-113));
+	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(2147483647));
+}
+*/

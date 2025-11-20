@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:45:00 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/12 16:56:29 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/19 12:48:08 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -28,3 +28,14 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	char	str[] = "sasha";
+	char	*dest;
+
+	dest = ft_strdup(str);
+	printf("%s\n", dest);
+}
+*/

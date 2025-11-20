@@ -6,7 +6,7 @@
 /*   By: sadaniel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:14:48 by sadaniel          #+#    #+#             */
-/*   Updated: 2025/11/18 12:25:05 by sadaniel         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:10:46 by sadaniel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,3 +30,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 	dst[i] = '\0';
 	return (src_len);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	char	*str = "sasha";
+	char	dest[20];
+
+	printf("%zu\n%s\n", ft_strlcpy(dest, str, sizeof(dest)), dest);
+}
+*/
