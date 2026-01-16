@@ -40,7 +40,7 @@ char	*get_next_line(int fd)
 		if (bytes < 0)
 			return (ft_free(&buffer, &stash), NULL);
 		buffer[bytes] = '\0';
-		stash = ft_strjoin(stash, buffer);
+		stash = ft_strjoin_gnl(stash, buffer);
 	}
 	line = ft_putline(line, stash);
 	ft_clean_stash(&stash);
