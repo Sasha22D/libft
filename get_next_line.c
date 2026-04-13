@@ -46,20 +46,3 @@ char	*get_next_line(int fd)
 	ft_clean_stash(&stash);
 	return (free(buffer), buffer = NULL, line);
 }
-
-// #include <stdio.h>
-// #include <fcntl.h>
-// int	main()
-// {
-// 	int	fd;
-// 	fd = open("file.txt", O_RDONLY);
-// 	// printf("fd = %d\n", fd);
-// 	char *line;
-
-// 	while ((line = get_next_line(fd)) != NULL)
-// 	{
-// 		printf("%s", line); // affiche la ligne avec le \n s'il existe
-// 		free(line);
-// 	}
-// 	close(fd);
-// }

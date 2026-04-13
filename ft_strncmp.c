@@ -25,11 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-int	main(int ac, char **av)
-{
-	(void)ac;
-	printf("%d\n", ft_strncmp((const char *)av[1], (const char *)av[2], 5));
-}
-*/

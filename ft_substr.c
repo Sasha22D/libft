@@ -37,16 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	*p = '\0';
 	return (str);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	char	str[] = "sasha daniel";
-	char	*dup;
-
-	dup = ft_substr((char const *)str, 4, 12);
-
-	printf("%s\n", dup);
-
-}
-*/

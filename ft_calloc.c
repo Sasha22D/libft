@@ -25,36 +25,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(ptr, 0, total_size);
 	return (ptr);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-void	print_memory(unsigned char *mem, size_t n)
-{
-	for (size_t i = 0; i < n; i++)
-		printf("%02X ", mem[i]);
-	printf("\n");
-}
-int	main()
-{
-	size_t	nmemb = 10;
-	size_t	size = sizeof(char);
-
-	char	*ptr1 = ft_calloc(nmemb, size);
-	
-	char	*ptr2 = calloc(nmemb, size);
-
-	if (!ptr1 || !ptr2)
-	{
-		free(ptr1);
-		free(ptr2);
-		return 1;
-	}
-
-	print_memory((unsigned char *)ptr1, nmemb * size);
-
-	print_memory((unsigned char *)ptr2, nmemb * size);
-
-	free(ptr1);
-	free(ptr2);
-}
-*/

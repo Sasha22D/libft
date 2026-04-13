@@ -29,15 +29,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	*str = "sasha daniel";
-	char	dest[20];
-
-	ft_memcpy(dest, str, 10);
-
-	printf("%s\n", dest);
-}
-*/
